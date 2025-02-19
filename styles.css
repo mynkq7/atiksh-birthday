@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Premium Dark Blue */
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Glassmorphism Container */
+.container {
+    text-align: center;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    animation: fadeIn 1.5s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Title Styling */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Message Styling */
+.message {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* 3D Neumorphic Button */
+button {
+    margin-top: 20px;
+    padding: 16px 32px;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Deep Red Gradient */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 0 8px 16px rgba(255, 75, 43, 0.3);
+    outline: none;
+    -webkit-tap-highlight-color: transparent; /* 🔹 Removes mobile blue highlight */
+    user-select: none; /* 🔹 Prevents text selection */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(255, 75, 43, 0.4);
+}
+
+/* Button Click Effect */
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 6px 12px rgba(255, 75, 43, 0.3);
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .message {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .message {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 25px;
+        width: 95%;
+    }
+}

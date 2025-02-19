@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Atiksh!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Happy 6th Birthday, <span id="name">Atiksh</span>! 🎂</h1>
+        <p class="message">May your day be filled with laughter, toys, and lots of cake! 🎁🎈</p>
+        <button onclick="playSong()">🎶 Play Birthday Song</button>
+        <audio id="birthdaySong" src="birthday.mp3" loop></audio>
+    </div>
+    <script>
+        function playSong() {
+            console.log('Button clicked');
+            document.getElementById('birthdaySong').play();
+        }
+    </script>
+</body>
+</html>
